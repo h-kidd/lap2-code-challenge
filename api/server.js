@@ -22,7 +22,7 @@ const postRoute = require('./routes/posts');
 app.use(express.json());
 
 // route middlewares
-app.use('/', postRoute);
+app.use('/posts', postRoute);
 
 // root response
 app.get('/', (req,res) => {

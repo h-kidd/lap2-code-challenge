@@ -1,9 +1,20 @@
-POST http://localhost:3000/
+POST http://localhost:3000/posts
 Content-Type: application/json
 
 {
-    "title": "Way",
+    "title": "Way2",
     "name": "Walt Disney",
-    "date": "01-01-1961",
     "body": "The way to get started is to quit talking and begin doing"
 }
+
+###
+GET http://localhost:3000/posts/abracadabra
+Content-Type: application/json
+
+{}
+
+###
+GET http://localhost:3000/posts/61decabb8f41aa3c9f58ccc5
+Content-Type: application/json
+
+{}
