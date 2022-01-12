@@ -1,0 +1,27 @@
+html, body {
+    height:100%
+}
+
+#welcomeBar {
+    height:35%;
+    background-color: rgb(255, 200, 100);
+
+}
+
+#postBar {
+    height:65%;
+    ;
+}
+
+.row {
+    height:100%
+}
+
+.col {
+    height:100% 
+}
+#postBtn {
+    display: block;
+    height: 100%
+    
+}
