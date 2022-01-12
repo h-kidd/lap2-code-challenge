@@ -6,7 +6,7 @@ db.posts.insertMany([
     { 
         title: "twitter", 
         name: "Aristotel", 
-        date: "01.01.2000" , 
+        date: "0022-01-12T12:17:32.796Z", 
         body: "Don’t believe everything you read on the internet" 
     }
 ])
