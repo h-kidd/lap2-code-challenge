@@ -10,16 +10,16 @@ myForm.addEventListener("submit", e => {
 
 async function postMessage(title, name, body, date){
     try {
-        const post = {title: title, name: name, date: date, body: body}
+        const post = {title: title, name: name, date: date, body: body};
         const options = {
             method: 'POST',
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(post)
-        }
+        };
         const response = await fetch('http://localhost:3000/posts', options);
         const id = await response.json();
-        window.open(window.location.href.slice(0, -11) + `/posts.html?id=${id}`, '_self')
+        window.open(window.location.href.slice(0, -11) + `/posts.html?id=${id}`, '_self');
     } catch (err) {
         console.warn(err);
-    }
+    };
 };
