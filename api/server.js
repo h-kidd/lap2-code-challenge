@@ -14,8 +14,15 @@ mongoose.connect(process.env.DB_CONNECT, {
         console.log('DB connected!')
     });
 
-// 
+
+// roots
+// import routes
+const postRoute = require('./routes/posts');
+
 app.use(express.json());
+
+// route middlewares
+app.use('/', authRoute);
 
 // root response
 app.get('/', (req,res) => {
